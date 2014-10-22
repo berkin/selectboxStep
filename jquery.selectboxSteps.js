@@ -1,4 +1,3 @@
-// Dealer locator multiple selectboxes
 (function($) {
   $.selectboxSteps = function(element, options) {
     
@@ -120,7 +119,6 @@
   }
 
     
-  
   $.fn.selectboxSteps = function(options) {
     // if url is not set, return false
     if ( options.url === undefined) {
