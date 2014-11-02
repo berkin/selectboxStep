@@ -17,7 +17,6 @@
       // get json data, parse 
       $.getJSON(base.options.url, function(data) {
         setOptions($el, data.categories);
-//        $el.find('option:first').attr('selected', 'selected');
       });
       
       $el.change(function() {
@@ -49,7 +48,6 @@
               .html($selected.name));
 
         cancel.hide().insertBefore($select).slideDown('fast');
-        //$select.hide();
         
         // if category has sub categories, append new selectbox
         if ( !!$selected.subcategory && !!$selected.subcategory.length ) {
@@ -62,7 +60,6 @@
 
           setOptions($select, $selected.subcategory)
 
-          //$select.insertAfter($select);
         } else {
           $select.hide();
         }
